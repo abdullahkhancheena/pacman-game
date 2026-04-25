@@ -13,7 +13,7 @@ class Pacman {
             this.changeAnimation();
         }, 100);
     }
-
+    
     moveProcess() {
         this.changeDirectionIfPossible();
         this.moveForwards();
@@ -76,16 +76,16 @@ class Pacman {
         let isCollided = false;
         if (
             map[parseInt(this.y / oneBlockSize)][
-                parseInt(this.x / oneBlockSize)
+            parseInt(this.x / oneBlockSize)
             ] == 1 ||
             map[parseInt(this.y / oneBlockSize + 0.9999)][
-                parseInt(this.x / oneBlockSize)
+            parseInt(this.x / oneBlockSize)
             ] == 1 ||
             map[parseInt(this.y / oneBlockSize)][
-                parseInt(this.x / oneBlockSize + 0.9999)
+            parseInt(this.x / oneBlockSize + 0.9999)
             ] == 1 ||
             map[parseInt(this.y / oneBlockSize + 0.9999)][
-                parseInt(this.x / oneBlockSize + 0.9999)
+            parseInt(this.x / oneBlockSize + 0.9999)
             ] == 1
         ) {
             isCollided = true;
